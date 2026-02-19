@@ -65,7 +65,7 @@
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <provider
-                android:name="androidx.core.content.FileProvider"
+                android:name="com.slm.camera.SLMCameraFileProvider"
                 android:authorities="${applicationId}.slm.camera.provider"
                 android:exported="false"
                 android:grantUriPermissions="true">
@@ -76,6 +76,7 @@
         </config-file>
 
         <source-file src="src/android/SLMCamera.java" target-dir="src/com/slm/camera" />
+        <source-file src="src/android/SLMCameraFileProvider.java" target-dir="src/com/slm/camera" />
         <resource-file src="src/android/res/xml/slm_camera_paths.xml" target="res/xml/slm_camera_paths.xml" />
 
         <framework src="androidx.exifinterface:exifinterface:1.3.7" />

@@ -15,6 +15,7 @@ import android.util.Base64;
 import android.util.Log;
 
 import androidx.core.content.FileProvider;
+import com.slm.camera.SLMCameraFileProvider;
 import androidx.exifinterface.media.ExifInterface;
 
 import org.apache.cordova.CallbackContext;
@@ -74,7 +75,7 @@ public class SLMCamera extends CordovaPlugin {
         try {
             Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
             File photoFile = createTempFile("jpg");
-            photoUri = FileProvider.getUriForFile(
+            photoUri = SLMCameraFileProvider.getUriForFile(
                     cordova.getActivity(),
                     cordova.getActivity().getPackageName() + ".slm.camera.provider",
                     photoFile);

@@ -1,0 +1,26 @@
+{
+  "name": "cordova-plugin-slm-camera",
+  "version": "1.0.0",
+  "description": "Captura de fotos con camara y seleccion desde galeria (PHPicker/CameraX)",
+  "cordova": {
+    "id": "cordova-plugin-slm-camera",
+    "platforms": ["android", "ios"]
+  },
+  "keywords": [
+    "cordova",
+    "camera",
+    "photo",
+    "gallery",
+    "picker",
+    "image",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Sergio Guerrero M <sergio.guerrero@slm.cloud>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergioguerrero-ux/cordova-plugin-slm-camera.git"
+  }
+}
